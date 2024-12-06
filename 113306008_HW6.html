@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>1A2B Game</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+        h1 {
+            text-align: center;
+            color: #333;
+        }
+        .game-container {
+            max-width: 600px;
+            margin: 0 auto;
+            text-align: center;
+        }
+        .input-section {
+            margin-bottom: 20px;
+        }
+        #results {
+            margin-top: 20px;
+        }
+        .alert {
+            color: red;
+        }
+    </style>
+</head>
+<body>
+    <h1>113306008_HW6_1A2B</h1>
+    <div class="game-container">
+        <div class="input-section">
+            <input type="text" id="userGuess" placeholder="輸入 4 個不重複數字">
+            <button onclick="checkGuess()">提交答案</button>
+        </div>
+        <p id="message" class="alert"></p>
+        <p>作答次數：<span id="attempts">0</span></p>
+        <div id="results">
+            <h3>結果記錄：</h3>
+            <ul id="guessList"></ul>
+        </div>
+    </div>
+    <script src="game.js"></script>
+</body>
+</html>
